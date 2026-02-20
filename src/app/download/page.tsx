@@ -1,11 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Monitor, Smartphone, Download } from "lucide-react"
+import { Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/sections/Navbar"
 import { Footer } from "@/components/sections/Footer"
-import Link from "next/link"
 
 const AppleLogo = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" {...props}>
@@ -13,11 +12,23 @@ const AppleLogo = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 )
 
+const AndroidLogo = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" {...props}>
+        <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55" />
+    </svg>
+)
+
+const WindowsLogo = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" {...props}>
+        <path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z" />
+    </svg>
+)
+
 const platforms = [
     {
         id: "android",
         name: "Android",
-        icon: Smartphone,
+        icon: AndroidLogo,
         description: "L'application mobile complète pour Android 8.0+",
         available: true,
         version: "1.0.4",
@@ -35,7 +46,7 @@ const platforms = [
     {
         id: "windows",
         name: "Windows",
-        icon: Monitor,
+        icon: WindowsLogo,
         description: "Client lourd pour Windows 10 & 11",
         available: false,
         version: "Bientôt disponible",
