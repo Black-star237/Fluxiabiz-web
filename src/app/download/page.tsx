@@ -186,7 +186,7 @@ export default function DownloadPage() {
                                 </div>
                                 {platform.available ? (
                                     <Button className="shrink-0 group" asChild>
-                                        <a href="https://txfmthbkxnotbamljuxg.supabase.co/storage/v1/object/public/apps/fluxiabiz-android-1.0.4.apk" download>
+                                        <a href="https://expo.dev/artifacts/eas/x13BCyHWvDbr29gaASf7Rr.apk">
                                             Télécharger
                                             <Download className="ml-2 w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
                                         </a>
