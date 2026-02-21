@@ -42,7 +42,7 @@ const platforms = [
         description: "L'application mobile complète pour Android 8.0+",
         available: true,
         version: "1.0.4",
-        size: "34 MB"
+        size: "102,74 Mo"
     },
     {
         id: "ios",
