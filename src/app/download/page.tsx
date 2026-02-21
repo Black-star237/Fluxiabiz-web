@@ -186,7 +186,7 @@ export default function DownloadPage() {
                                 </div>
                                 {platform.available ? (
                                     <Button className="shrink-0 group" asChild>
-                                        <a href="https://expo.dev/artifacts/eas/x13BCyHWvDbr29gaASf7Rr.apk">
+                                        <a href="https://expo.dev/artifacts/eas/eJ2Rv2HR2mVMTZX6vRQzYS.apk">
                                             Télécharger
                                             <Download className="ml-2 w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
                                         </a>
