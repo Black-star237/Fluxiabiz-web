@@ -11,19 +11,29 @@ export function Hero() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full z-0 pointer-events-none">
                 <motion.div
                     animate={{
-                        y: [-20, 20, -20],
-                        scale: [1, 1.1, 1],
+                        y: [-60, 60, -60],
+                        x: [-40, 40, -40],
+                        scale: [1, 1.2, 1],
                     }}
                     transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-                    className="absolute top-20 -left-20 w-96 h-96 bg-fluxia-green/20 rounded-full blur-[100px]"
+                    className="absolute top-10 left-0 md:-left-20 w-96 h-96 bg-fluxia-green/30 rounded-full blur-[100px]"
                 />
                 <motion.div
                     animate={{
-                        y: [20, -20, 20],
-                        scale: [1.1, 1, 1.1],
+                        y: [60, -60, 60],
+                        x: [40, -40, 40],
+                        scale: [1.2, 1, 1.2],
                     }}
                     transition={{ repeat: Infinity, duration: 10, ease: "easeInOut", delay: 1 }}
-                    className="absolute top-40 -right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"
+                    className="absolute top-20 right-0 md:-right-20 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px]"
+                />
+                <motion.div
+                    animate={{
+                        y: [-30, 30, -30],
+                        x: [100, -100, 100],
+                    }}
+                    transition={{ repeat: Infinity, duration: 12, ease: "easeInOut" }}
+                    className="absolute top-60 left-1/3 w-[350px] h-[350px] bg-teal-400/20 rounded-full blur-[100px]"
                 />
             </div>
 
