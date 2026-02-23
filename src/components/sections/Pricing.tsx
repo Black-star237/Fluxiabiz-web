@@ -61,8 +61,38 @@ export function Pricing() {
                     className="max-w-lg mx-auto"
                 >
                     <div className="bg-slate-900 shadow-2xl rounded-[2.5rem] p-8 md:p-12 border-2 border-slate-700/50 relative overflow-hidden group hover:border-fluxia-green/50 transition-colors duration-500">
+                        {/* Animated Background Blobs */}
+                        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+                            <motion.div
+                                animate={{
+                                    y: [-60, 60, -60],
+                                    x: [-40, 40, -40],
+                                    scale: [1, 1.2, 1],
+                                }}
+                                transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+                                className="absolute top-10 left-0 w-64 h-64 bg-fluxia-green/20 rounded-full blur-[80px]"
+                            />
+                            <motion.div
+                                animate={{
+                                    y: [60, -60, 60],
+                                    x: [40, -40, 40],
+                                    scale: [1.2, 1, 1.2],
+                                }}
+                                transition={{ repeat: Infinity, duration: 10, ease: "easeInOut", delay: 1 }}
+                                className="absolute bottom-10 right-0 w-80 h-80 bg-blue-500/20 rounded-full blur-[80px]"
+                            />
+                            <motion.div
+                                animate={{
+                                    y: [-30, 30, -30],
+                                    x: [100, -100, 100],
+                                }}
+                                transition={{ repeat: Infinity, duration: 12, ease: "easeInOut" }}
+                                className="absolute top-1/2 left-1/4 w-72 h-72 bg-teal-400/20 rounded-full blur-[80px]"
+                            />
+                        </div>
+
                         {/* Featured gradient overlay on hover */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-fluxia-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-fluxia-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0" />
 
                         <div className="relative z-10 text-center mb-8">
                             <h3 className="text-2xl font-bold text-white mb-2">Offre Pro</h3>
